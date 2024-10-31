@@ -1,0 +1,9 @@
+
+from Practice.pageObjects.HomePage import HomePage
+from Practice.utils.BaseClass import BaseClass
+
+class EcomerceTest(BaseClass):
+    def test_e2e(self):
+        homePage = HomePage(self.driver)
+        homePage.shopItems.click()
+    
